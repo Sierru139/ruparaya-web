@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/src/style/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
     <title>Rupa Raya Indonesia</title>
 </head>
 <style>
@@ -16,6 +17,33 @@
         background-image: url(assets/img/building.jpg);
         background-size: cover;
     }
+
+    .gg-menu {
+    transform: scale(var(--ggs,1))
+    }
+
+    .gg-menu,
+    .gg-menu::after,
+    .gg-menu::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor
+    }
+
+    .gg-menu::after,
+    .gg-menu::before {
+    content: "";
+    position: absolute;
+    top: -6px
+    }
+
+    .gg-menu::after {
+    top: 6px
+    } 
 </style>
 <body class="font-nunito">
 
@@ -23,7 +51,7 @@
     <!-- ==================================================== -->
     <!-- ==================================================== -->
 
-    <section class="img h-[700px] p-10">    
+    <section class="img h-[700px] p-10 m-auto">    
         <header class="relative font-nunito">
             <nav class="mb-10">
                 <div class="flex py-4 px-10 bg-[#F7F7F7] rounded-[100px] items-center justify-between">
@@ -201,7 +229,45 @@
     <!-- ==================================================== -->
     <!-- ==================================================== -->
 
+    <section class="h-screen bg-[#F7F7F7] pt-20">
+        <div class="flex justify-around relative">
+            <div class="w-[600px]">
+                <div class="flex items-center">
+                    <div class="w-[20px] h-[2px] bg-[#EDC806]"></div>
+                    <p class="tracking-[5px] pl-2">INTERSHIP</p>
+                </div>
+                <h1 class="font-bold text-5xl w-[470px] py-5">Program Intership Rupa Raya Indonesia</h1>
+                <p class="text-[#646464] text-[17px]">Amet mauris commodo quis imperdiet. Vulputate mi sit amet mauris commodo quis. Nulla at volutpat diam ut. Eu facilisis sed odio morbi quis. Elementum tempus egestas sed sed risus pretium quam.</p>
+                <div class=" flex items-start py-5">
+                    <i class="fas fas fa-braille bg-[#0056C1] p-3 text-white rounded-[50%] text-1xl"></i>
+                    <div class="px-3">
+                        <h2 class="text-[20px]">Reception</h2>
+                        <p class="text-[#646464]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    </div>
+                </div>
+                <div class=" flex items-start pb-5">
+                    <i class="fas fas fas fa-people-carry bg-[#0056C1] p-3 text-white rounded-[50%] text-1xl"></i>
+                    <div class="px-3">
+                        <h2 class="text-[20px]">Training</h2>
+                        <p class="text-[#646464]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    </div>
+                </div>
+                <div class=" flex items-start">
+                    <i class="fas fas far fa-paper-plane bg-[#0056C1] p-3 text-white rounded-[50%] text-1xl"></i>
+                    <div class="px-3">
+                        <h2 class="text-[20px]">Release</h2>
+                        <p class="text-[#646464]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    </div>
+                </div>
+            </div>
 
+            <div>
+                <img class="rounded-t-[50%] rounded-b-[20px]" width="500px" src="assets/img/training.jpg" alt="">
+                <img class="absolute top-40 right-[500px]" width="200px" src="assets/img/graphic-1-1.jpg" alt="">
+                <img class="absolute top-56 right-[200px]" width="300px" src="assets/img/element.jpg" alt="">
+            </div>
+        </div>
+    </section>
 
     <!-- ==================================================== -->
     <!-- ==================================================== -->
@@ -229,7 +295,32 @@
     <!-- ==================================================== -->
     <!-- ==================================================== -->
 
-
+    <section class="h-screen bg-[#EDF9FF] pt-20">
+        <div class="flex relative">
+            <div class="w-[600px]">
+                <div class="flex items-center">
+                    <div class="w-[35px] h-[3px] bg-[#EDC806]"></div>
+                    <p class="tracking-[5px] pl-2">CONTACT US</p>
+                </div>
+                <h1 class="font-bold text-5xl w-[470px] py-5">Get Free Qoutes</h1>
+                <p class="text-[#646464] text-[17px]">Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Fermentum iaculis eu non diam phasellus vestibulum. Massa eget egestas purus viverra accumsan in nisl nisi scelerisque. Nullam ac tortor vitae purus faucibus.</p>
+                <a>learn More</a>
+                <p>Short messege from us</p>
+                <div>
+                    <i class="fas fas fas fa-phone-alt"></i>
+                    <p>Telp : +(123)-234-1234</p>
+                </div>
+                <div>
+                    <i class="fas fas fa-home"></i>
+                    <p>Address : Jalan A.P Pettarani 2i Nomor 8 - 9, Kelurahan Tamanmaung, Kecamatan Panakkukang, Kota Makassar Kode pos 90231</p>
+                </div>
+                <div>
+                    <i class="fas fas fa-envelope"></i>
+                    <p>ptruparayaindonesia@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- ==================================================== -->
     <!-- ==================================================== -->
