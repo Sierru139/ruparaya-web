@@ -50,6 +50,30 @@
     <!-- ====================== NAVBAR START ====================== -->              <!-- by Hafiz -->
     <!-- ==================================================== -->
     <!-- ==================================================== -->
+    
+    <nav class="absolute top-0 left-0 right-0 m-10 md:px-20">
+        <div class="flex  items-center justify-between flex-wrap py-4 px-10 bg-[#F7F7F7] rounded-full">
+            <div class="">
+                <img src="assets/img/logo.jpg" class="cursor-pointer w-40" alt="">
+            </div>
+            <div class="md:flex hidden"></div>
+            <div class="lg:flex hidden gap-x-7 text-[18px] font-semibold">
+                <a>Home</a>
+                <a>About</a>
+                <a>Product</a>
+                <a>Achievement</a>
+                <a>Internship Program</a>
+                <a>Activition</a>
+            </div>
+            <div class="py-4 px-10 text-[#F7F7F7] bg-[#EDC806] rounded-full transition duration-300 hover:scale-90 cursor-pointer font-bold">
+                <p>Schedule Call Now</p>
+            </div>
+        </div>
+    </nav>         
+    <!-- ==================================================== -->
+    <!-- ==================================================== -->
+    <!-- ====================== NAVBAR END ====================== -->              <!-- by Hafiz -->
+    
 
     <section class="img h-[700px] p-10 m-auto">    
         <header class="relative font-nunito">
@@ -69,24 +93,28 @@
                     <div class="py-4 px-10 text-[#F7F7F7] bg-[#EDC806] rounded-[50px] transition duration-300 hover:scale-90 cursor-pointer font-bold">
                         <p>Schedule Call Now</p>
                     </div>
+
+    
+
+    <!-- ==================================================== -->
+    <!-- ==================================================== -->
+    <!-- ====================== SLIDER START ====================== -->
+    
+    <section class="h-screen md:p-20 p-10 flex items-center bg-[url(../assets/img/building.jpg)] bg-cover bg-no-repeat bg-center">    
+        <div class="max-w-[750px] m-10 text-left">
+            <h1 class="text-5xl font-bold text-white">RUPARAYA INDONESIA</h1>
+            <p class="text-[#F7F7F7] mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis tellus in metus vulputate eu scelerisque felis. Vitae congue mauris rhoncus aenean.</p>
+            <div class="flex sm:flex-row flex-col items-start md:items-center mt-10">
+                <a class="sm:mr-2 mt-3 bg-[#EDC806] py-3 px-6 rounded-full text-white">Explore More</a>
+                <div class="flex items-center">
+                    <i class="sm:mr-2 mt-3 fas fas fa-play bg-[#EDC806] py-3 px-4 rounded-full text-white text-2xl"></i>
+                    <p class="sm:mr-2 mt-3 text-[#F7F7F7]">SHOW MORE VIDEO</p>
                 </div>
-            </nav>            
-        </header>
-        <div class="p-10">
-            <h1 class="text-6xl font-bold text-[#F7F7F7]">RUPA RAYA INDONESIA</h1>
-            <p class="w-[750px] text-[20px] text-[#F7F7F7] pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis tellus in metus vulputate eu scelerisque felis. Vitae congue mauris rhoncus aenean.</p>
-            <div class="flex pt-10 items-center">
-                <div class="w-44 transition duration-300 hover:scale-90 cursor-pointer">
-                    <a class="bg-[#EDC806] py-3 px-6 rounded-[100px] text-[#F7F7F7] mr-5">Explore More</a>
-                </div>
-                <div class="border-l-[1px]">
-                    <i class="fas fas fa-play bg-[#EDC806] py-3 px-4 rounded-[50%] text-[#F7F7F7] mx-5 text-2xl"></i>
-                </div>
-                <p class="text-[#F7F7F7]">SHOW MORE VIDEO</p>
             </div>
         </div>
     </section>
-
+    
+    
     <!-- ==================================================== -->
     <!-- ==================================================== -->
     <!-- ====================== SLIDER END ====================== -->                <!-- by Hafiz -->
@@ -99,16 +127,17 @@
     <!-- ==================================================== -->
     <!-- ==================================================== -->
 
-    <section id="tentang" class="container px-5 py-16 flex md:flex-row flex-col-reverse justify-center items-center">
-        
-        <div class="flex p-4 flex-[0_0_50%] justify-center">
-            <div class="h-64 w-40 rounded-full mr-4 bg-red-500"></div>
-            <div class="h-96 w-40 rounded-full mr-4 relative bg-red-400">
-                <div class="absolute bottom-0 w-full rounded-full h-40 bg-black"></div>
+    <section id="tentang" class="w-full px-5 py-16 flex md:flex-row flex-col-reverse justify-center items-center">
+        <div class="flex-1">
+            <div class="flex p-4 justify-center items-center">
+                <div class="h-72 w-56 rounded-full mr-4 bg-blue-300 bg-[url('../assets/img/3-1.jpg')] bg-no-repeat bg-center bg-cover"></div>
+                <div class="h-96 w-56 rounded-full mr-4 relative bg-[url('../assets/img/3-2.jpg')] bg-no-repeat bg-center bg-cover">
+                    <img src="assets/img/graphic-1-1.png" class="absolute bottom-0 w-full rounded-full ">
+                </div>
             </div>
         </div>
 
-        <div class="flex flex-col justify-center flex-[0_0_50%]">
+        <div class="flex flex-col justify-center flex-1">
             <h1 class="font-bold text-5xl mb-7">Lorem Ipsum Dolor Sit</h1>
             <div class="mb-3 text-lg">
                 <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur harum fuga nesciunt rem ut tenetur facere modi obcaecati facilis! Molestiae Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur.!</p>
@@ -155,7 +184,7 @@
 
     <section class="w-full bg-[#EDF9FF]">
 
-        <div class="max-w-[1080px] mx-auto">
+        <div class="max-w-[1280px] mx-auto">
             <div class=" pt-20 pb-5 px-10">
                 <div class= "mx-auto flex flex-col md:flex-row justify-around">
                     <div class="flex justify-center flex-col flex-1 m-5 p-2">
@@ -175,9 +204,9 @@
                         <img class="rounded-xl" src="assets/img/3-1.jpg" alt="">
                     </div>
                     <div class="flex flex-col justify-center flex-1 m-4 text-white">
-                        <h1 class="mb-2 text-2xl">Project 1</h1>
-                        <p class="mb-4 text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam consequatur illo praesentium veritatis dolorum. Nesciunt beatae alias rem. Quaerat, odio.</p>
-                        <ul class="text-xs list-disc pl-4">
+                        <h1 class="mb-2 text-4xl">Project 1</h1>
+                        <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam consequatur illo praesentium veritatis dolorum. Nesciunt beatae alias rem. Quaerat, odio.</p>
+                        <ul class="text-s list-disc pl-4">
                             <li class="mb-2">Lorem, ipsum dolor.</li>
                             <li class="mb-2">Aliquam voluptatem blanditiis debitis</li>
                             <li class="mb-2">Lorem ipsum dolor sit.</li>
@@ -190,9 +219,9 @@
                         <img class="rounded-xl" src="assets/img/3-2.jpg" alt="">
                     </div>
                     <div class="flex flex-col justify-center flex-1 m-4 text-white">
-                        <h1 class="mb-2 text-2xl">Project 2</h1>
-                        <p class="mb-4 text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam consequatur illo praesentium veritatis dolorum. Nesciunt beatae alias rem. Quaerat, odio.</p>
-                        <ul class="text-xs list-disc pl-4">
+                        <h1 class="mb-2 text-4xl">Project 1</h1>
+                        <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam consequatur illo praesentium veritatis dolorum. Nesciunt beatae alias rem. Quaerat, odio.</p>
+                        <ul class="text-s list-disc pl-4">
                             <li class="mb-2">Lorem, ipsum dolor.</li>
                             <li class="mb-2">Aliquam voluptatem blanditiis debitis</li>
                             <li class="mb-2">Lorem ipsum dolor sit.</li>

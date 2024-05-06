@@ -668,6 +668,18 @@ video {
   right: 450px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -716,6 +728,10 @@ video {
   margin: auto;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -756,6 +772,18 @@ video {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .block {
@@ -832,6 +860,10 @@ video {
 
 .h-\[3px\] {
   height: 3px;
+}
+
+.h-72 {
+  height: 18rem;
 }
 
 .w-40 {
@@ -962,8 +994,20 @@ video {
   width: 35px;
 }
 
+.w-56 {
+  width: 14rem;
+}
+
 .max-w-\[1080px\] {
   max-width: 1080px;
+}
+
+.max-w-\[1280px\] {
+  max-width: 1280px;
+}
+
+.max-w-\[750px\] {
+  max-width: 750px;
 }
 
 .flex-\[0_0_50\%\] {
@@ -992,6 +1036,10 @@ video {
 
 .flex-col-reverse {
   flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-start {
@@ -1147,8 +1195,25 @@ video {
   background-color: rgb(0 86 193 / var(--tw-bg-opacity));
 }
 
+.bg-blue-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-tl {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/3-1\.jpg\'\)\] {
+  background-image: url('../assets/img/3-1.jpg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/img\/3-2\.jpg\'\)\] {
+  background-image: url('../assets/img/3-2.jpg');
+}
+
+.bg-\[url\(\.\.\/assets\/img\/building\.jpg\)\] {
+  background-image: url(../assets/img/building.jpg);
 }
 
 .from-yellow-500 {
@@ -1159,6 +1224,18 @@ video {
 
 .to-blue-500 {
   --tw-gradient-to: #3b82f6 var(--tw-gradient-to-position);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-10 {
@@ -1272,6 +1349,10 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .font-nunito {
   font-family: nunito, sans-serif;
 }
@@ -1348,6 +1429,11 @@ video {
 
 .text-\[10px\] {
   font-size: 10px;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold {
@@ -1516,8 +1602,16 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:mr-2 {
+    margin-right: 0.5rem;
+  }
+
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
   }
 }
 
@@ -1542,14 +1636,31 @@ video {
     flex-direction: row;
   }
 
+  .md\:items-center {
+    align-items: center;
+  }
+
   .md\:p-5 {
     padding: 1.25rem;
+  }
+
+  .md\:p-20 {
+    padding: 5rem;
+  }
+
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .lg\:block {
     display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:grid {
