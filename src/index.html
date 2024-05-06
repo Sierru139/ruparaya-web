@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/src/style/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Rupa Raya Indonesia</title>
     <style>
         .img {
@@ -15,46 +16,53 @@
         }
     </style>
 </head>
+<style>
+    .img {
+        background-image: url(assets/img/building.jpg);
+        background-size: cover;
+    }
+</style>
 <body class="font-nunito">
 
     <!-- ====================== NAVBAR START ====================== -->              <!-- by Hafiz -->
     <!-- ==================================================== -->
     <!-- ==================================================== -->
 
-    <header class="relative font-nunito">
-        <nav class="m-10">
-            <div class="flex py-4 px-10 bg-[#F7F7F7] rounded-[100px] items-center justify-between">
-                <div class="">
-                    <img src="assets/img/logo.jpg" width="200px" alt="">
+    <section class="img h-[700px] p-10">    
+        <header class="relative font-nunito">
+            <nav class="mb-10">
+                <div class="flex py-4 px-10 bg-[#F7F7F7] rounded-[100px] items-center justify-between">
+                    <div class="">
+                        <img src="assets/img/logo.jpg" class="cursor-pointer" width="200px" alt="">
+                    </div>
+                    <div class="flex gap-x-7 text-[18px] font-semibold">
+                        <a class="pr-">Home</a>
+                        <a>About</a>
+                        <a>Product</a>
+                        <a>Achievement</a>
+                        <a>Internship Program</a>
+                        <a>Activition</a>
+                    </div>
+                    <div class="py-4 px-10 text-[#F7F7F7] bg-[#EDC806] rounded-[50px] transition duration-300 hover:scale-90 cursor-pointer font-bold">
+                        <p>Schedule Call Now</p>
+                    </div>
                 </div>
-                <div class="flex gap-x-7 text-[18px] font-bold">
-                    <a class="pr-">Home</a>
-                    <a>About</a>
-                    <a>Product</a>
-                    <a>Achievement</a>
-                    <a>Internship Program</a>
-                    <a>Activition</a>
+            </nav>            
+        </header>
+        <div class="p-10">
+            <h1 class="text-6xl font-bold text-[#F7F7F7]">RUPA RAYA INDONESIA</h1>
+            <p class="w-[750px] text-[20px] text-[#F7F7F7] pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis tellus in metus vulputate eu scelerisque felis. Vitae congue mauris rhoncus aenean.</p>
+            <div class="flex pt-10 items-center">
+                <div class="w-44 transition duration-300 hover:scale-90 cursor-pointer">
+                    <a class="bg-[#EDC806] py-3 px-6 rounded-[100px] text-[#F7F7F7] mr-5">Explore More</a>
                 </div>
-                <div class="py-4 px-10 text-[#F7F7F7] bg-[#EDC806] rounded-[50px]">
-                    <p>Schedule Call Now</p>
+                <div class="border-l-[1px]">
+                    <i class="fas fas fa-play bg-[#EDC806] py-3 px-4 rounded-[50%] text-[#F7F7F7] mx-5 text-2xl"></i>
                 </div>
+                <p class="text-[#F7F7F7]">SHOW MORE VIDEO</p>
             </div>
-        </nav>
-    </header>
-
-    <!-- ==================================================== -->
-    <!-- ==================================================== -->
-    <!-- ====================== NAVBAR END ====================== -->                <!-- by Hafiz -->
-
-
-
-
-
-    <!-- ====================== SLIDER START ====================== -->              <!-- by Hafiz -->
-    <!-- ==================================================== -->
-    <!-- ==================================================== -->
-
-
+        </div>
+    </section>
 
     <!-- ==================================================== -->
     <!-- ==================================================== -->
