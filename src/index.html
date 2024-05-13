@@ -238,7 +238,7 @@
 
     <section class="h-screen bg-[#F7F7F7] pt-20">
         <div class="flex justify-around relative">
-            <div class="w-[600px]">
+            <div class="max-w-[600px]">
                 <div class="flex items-center">
                     <div class="w-[20px] h-[2px] bg-[#EDC806]"></div>
                     <p class="tracking-[5px] pl-2">INTERSHIP</p>
@@ -302,36 +302,60 @@
     <!-- ==================================================== -->
     <!-- ==================================================== -->
 
-    <section class="h-screen bg-[#EDF9FF] pt-20">
-        <div class="flex relative">
-            <div class="w-[600px]">
-                <div class="flex items-center">
-                    <div class="w-[35px] h-[3px] bg-[#EDC806]"></div>
-                    <p class="tracking-[5px] pl-2">CONTACT US</p>
-                </div>
-                <h1 class="font-bold text-5xl w-[470px] py-5">Get Free Qoutes</h1>
-                <p class="text-[#646464] text-[17px]">Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Fermentum iaculis eu non diam phasellus vestibulum. Massa eget egestas purus viverra accumsan in nisl nisi scelerisque. Nullam ac tortor vitae purus faucibus.</p>
-                <a>learn More</a>
-                <p>Short messege from us</p>
-                <div>
-                    <i class="fas fas fas fa-phone-alt"></i>
-                    <p>Telp : +(123)-234-1234</p>
-                </div>
-                <div>
-                    <i class="fas fas fa-home"></i>
-                    <p>Address : Jalan A.P Pettarani 2i Nomor 8 - 9, Kelurahan Tamanmaung, Kecamatan Panakkukang, Kota Makassar Kode pos 90231</p>
-                </div>
-                <div>
-                    <i class="fas fas fa-envelope"></i>
-                    <p>ptruparayaindonesia@gmail.com</p>
+    <section class="h-fit md:h-screen bg-[#EDF9FF] px-12 py-20 flex-col md:flex-row md:flex gap-6">
+        <div class="flex-1 mb-10">
+            <div>
+                <h1 class="font-thin text-xl">CONTACT US</h1>
+                <h1 class="text-5xl py-8 font-bold">Get Free <span class="text-[#002E6B]">Quotes</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, dolor perferendis laboriosam libero dolores quaerat ab temporibus reprehenderit commodi ducimus eum praesentium optio quae ratione totam, laborum exercitationem sit dignissimos nisi, in id natus magnam. Dignissimos earum quo ex dolorum, labore autem nemo aut adipisci iure nam impedit quos incidunt perferendis eveniet voluptates voluptatum reprehenderit, magni sit. Iusto repellat cumque veritatis accusamus magnam quidem.</p>
+            </div>
+
+            <div class="py-8">
+                <button class="py-3 px-8 text-[#002E6B]  bg-[#EDC806] rounded-full hover:bg-[#002E6B] hover:text-[#EDC806] transition duration-500">
+                    <a href="" class="text-xl font-bold ">Learn More</a>
+                </button>
+            </div>
+
+            <div>
+                <h1>Short message from us</h1>
+                <div class="pt-4">
+                    <p class="mb-1"><span><i class="fa-solid fa-phone"></i></span> Telp: +62 8123-123-123</p>
+                    <p class="mb-1"><span><i class="fa-solid fa-house-user"></i></span> Address: Jalan A.P Pettarani 2i Nomor 8 - 9</p>
+                    <p class="mb-1"><span><i class="fa-solid fa-envelope"></i></span> example@gmail.com</p>
                 </div>
             </div>
         </div>
+
+        <div class="flex-1">
+        <form action="" class="flex-1 flex justify-center">
+            <div class="w-full flex flex-col">
+                <div class="flex flex-row gap-3">
+                    <div class="flex-1">
+                        <input type="text" placeholder="First Name" class="rounded-xl w-full py-4 px-3">
+                        <p class="py-3">Enter you first name</p>
+                    </div>
+                    <div class="flex-1">
+                        <input type="text" placeholder="Last Name" class="rounded-xl w-full py-4 px-3">
+                        <p class="py-3">Enter you last name</p>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <input class="w-full py-4 px-3 rounded-xl" type="email" placeholder="Email Address">
+                    <p class="py-3">Example: example@mail.com</p>
+                </div>
+                <input type="text" placeholder="Topics or Problem..." class="py-4 px-3 rounded-xl mt-3">
+                <textarea class="mt-4 px-3 py-3 h-52 rounded-xl" name="" id="" placeholder="Input Message Here"></textarea>
+                <div class="mt-6">
+                    <button class="font-bold text-2xl text-[#002E6B] bg-[#EDC806] rounded-full w-full py-2 md:py-4 hover:bg-[#002E6B] hover:text-[#EDC806] transition duration-500" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
     </section>
 
     <!-- ==================================================== -->
     <!-- ==================================================== -->
-    <!-- ====================== CONTACT AND SUPPORT END ====================== -->   <!-- by Hafiz -->
+    <!-- ====================== CONTACT AND SUPPORT END ====================== -->   <!-- by Yusran -->
 
 
 
@@ -341,11 +365,73 @@
     <!-- ==================================================== -->
     <!-- ==================================================== -->
 
+    <section class="bg-[#002E6B] flex w-full h-fit md:h-[30rem]">
+        <div class="flex flex-col">
+            <div class="px-16 md:px-20 py-20 md:py-24 pb-4 md:pb-6 flex flex-col md:flex-row gap-8 md:gap-64 text-center md:text-left">
+                <div class="flex gap-6 flex-col">
+                    <div class="text-white">
+                        <h1 class="text-xl [&>p]:text-lg">LOCATION</h1>
+                        <div class="py-4 flex flex-col gap-3">
+                            <p class="text-md">Jalan A.P Pettarani 2i Nomor 8 - 9</p>
+                            <p class="text-md">Senin - Jumat: 08:30 - 17:50</p>
+                        </div>
+                    </div>
+                    <div class="text-white">
+                        <h1 class="text-xl">SOCIAL MEDIA</h1>
+                        <div class="py-4 flex flex-row gap-3 justify-center md:justify-start">
+                            <i class="hover:bg-white hover:text-[#0056C7] transition duration-500 cursor-pointer fa-brands fa-facebook bg-[#0056C7] rounded-full p-2"></i>
+                            <i class="hover:bg-white hover:text-[#0056C7] transition duration-500 cursor-pointer fa-brands fa-twitter bg-[#0056C7] rounded-full p-2"></i>
+                            <i class="hover:bg-white hover:text-[#0056C7] transition duration-500 cursor-pointer fa-brands fa-instagram bg-[#0056C7] rounded-full p-2"></i>
+                            <i class="hover:bg-white hover:text-[#0056C7] transition duration-500 cursor-pointer fa-brands fa-youtube bg-[#0056C7] rounded-full p-2"></i>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="flex flex-col">
+                    <h1 class="text-xl text-white">OUR COMPANY</h1>
+                    <div class="py-4 flex flex-col [&>a]:text-md [&>a]:text-[#426491] gap-3">
+                        <a class="hover:underline" href="">Introduce Company</a>
+                        <a class="hover:underline" href="">Our Professional Team</a>
+                        <a class="hover:underline" href="">Legal Notice</a>
+                        <a class="hover:underline" href="">Privacy Police</a>
+                        <a class="hover:underline" href="">Terms & Conditions</a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <h1 class="text-xl text-white">OUR SERVICE</h1>
+                    <div class="py-4 flex flex-col [&>a]:text-md [&>a]:text-[#426491] gap-3">
+                        <a class="hover:underline" href="">Digital Marketing</a>
+                        <a class="hover:underline" href="">Business Management</a>
+                        <a class="hover:underline" href="">Plan Implementation</a>
+                        <a class="hover:underline" href="">Web Development</a>
+                        <a class="hover:underline" href="">Other Services</a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <h1 class="text-xl text-white">USEFUL LINKS</h1>
+                    <div class="py-4 flex flex-col [&>a]:text-md [&>a]:text-[#426491] gap-3">
+                        <a class="hover:underline" href="">Latest Project</a>
+                        <a class="hover:underline" href="">Vission & Mission</a>
+                        <a class="hover:underline" href="">Pricing Plan</a>
+                        <a class="hover:underline" href="">News & Article</a>
+                        <a class="hover:underline" href="">Support Company</a>
+                    </div>
+                </div>
+            </div>
+            <div class="px-20 py-4 border-t-2 border-[#426491] h-36 md:h-full flex w-screen justify-between items-center md:flex-row flex-col">
+                <div class="flex w-fit">
+                    <img src="assets/img/logo-white.png" alt="" class="w-44">
+                </div>
+                <p class="text-white">Rupa Raya Indonesia Copyright<span><i class="fa-regular fa-copyright"></i></span>2024</p>
+            </div>
+        </div>
+    </section>
 
     <!-- ==================================================== -->
     <!-- ==================================================== -->
-    <!-- ====================== FOOTER END ====================== -->
+    <!-- ====================== FOOTER END ====================== -->  <!-- by Yusran -->
 
 
     
