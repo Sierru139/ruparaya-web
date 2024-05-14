@@ -44,6 +44,31 @@
     .gg-menu::after {
     top: 6px
     } 
+
+    .text-hover {
+        opacity: 0;
+        transition: .5s;
+    }
+
+    #box-parent:hover .text-hover {
+        opacity: 1;
+    }
+
+    .box-hover {
+        transition-duration: 1s;
+    }
+
+    .box-hover:hover {
+        box-shadow: inset 900px 0px 0px rgba(60, 166, 253, 0.5);
+    }
+
+    .box-hover-hover {
+        transition-duration: 2s;
+    }
+
+    .box-hover-hover:hover {
+        box-shadow: inset 900px 0px 0px rgba(19, 37, 51, 0.9);
+    }
 </style>
 <body class="font-nunito">
 
@@ -222,7 +247,9 @@
     <!-- ==================================================== -->
     <!-- ==================================================== -->
 
+    <section>
 
+    </section>
 
     <!-- ==================================================== -->
     <!-- ==================================================== -->
@@ -268,13 +295,13 @@
                 </div>
             </div>
 
-            <div class="relative" >
+            <!-- <div class="relative" >
                 <img class="absolute top-[300px]" src="assets/img/graphic-1-1.jpg" alt="">
                     <div>
-                        <img class="relative rounded-t-full rounded-b-[20px] h-[550px]" src="assets/img/training.jpg" alt="">
+                        <img class="rounded-t-full rounded-b-[20px] h-[550px]" src="assets/img/training.jpg" alt="">
                     </div>
                 <img class="absolute" src="assets/img/element.jpg" alt="">
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -286,15 +313,63 @@
 
 
 
-    <!-- ====================== ACTIVITON START ====================== -->           <!-- by Yasir -->
+    <!-- ====================== ACTIVITON START ====================== -->           <!-- by Yusran -->
     <!-- ==================================================== -->
     <!-- ==================================================== -->
 
+        <section class=" bg-white pt-20 px-56 mb-12">
+            <div>
+                <div class="flex flex-col items-center">
+                    <h1 class="font-thin text-xl tracking-[0.3em]">Latest Project</h1>
+                    <h1 class="text-5xl font-bold py-6">Make Work More <span class="text-[#002E6B]">Efficient</span></h1>
+                    <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi itaque architecto totam numquam fugiat. Eligendi, libero iure magni enim laborum quo dolores ea! Recusandae illum repellat facilis necessitatibus explicabo assumenda quisquam animi.</p>
+                </div>
 
+                <div class="grid grid-cols-2 grid-rows-2 gap-4 mt-4">
+                    <div id="box-parent" class=" h-[24rem] items-end flex relative overflow-hidden rounded-lg">
+                        <div class="text-white z-10 mx-5 mb-6 text-hover">
+                            <h1 class="text-3xl text-hover">Project Name 01</h1>
+                            <p class="text-lg font-thin text-hover">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolor beatae laborum perferendis saepe, non illo quia neque ex aut.</p>
+                        </div>
+                        <div class="box-hover w-full h-full absolute box-hover-hover">
+                            <div style="background-image: url(assets/img/3-2.jpg); background-size: cover; " class="w-full h-full hover:scale-110 duration-500 box-hover" alt=""></div>
+                        </div>
+                    </div>
+                    <div id="box-parent" class=" h-[24rem] items-end flex relative overflow-hidden rounded-lg">
+                        <div class="text-white z-10 mx-5 mb-6 text-hover">
+                            <h1 class="text-3xl text-hover">Project Name 02</h1>
+                            <p class="text-lg font-thin text-hover">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolor beatae laborum perferendis saepe, non illo quia neque ex aut.</p>
+                        </div>
+                        <div class="box-hover w-full h-full absolute box-hover-hover">
+                            <div style="background-image: url(assets/img/3-2.jpg); background-size: cover; " class="w-full h-full hover:scale-110 duration-500 box-hover" alt=""></div>
+                        </div>
+                    </div>
+                    <div id="box-parent" class=" h-[24rem] items-end flex relative overflow-hidden rounded-lg">
+                        <div class="text-white z-10 mx-5 mb-6 text-hover">
+                            <h1 class="text-3xl text-hover">Project Name 03</h1>
+                            <p class="text-lg font-thin text-hover">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolor beatae laborum perferendis saepe, non illo quia neque ex aut.</p>
+                        </div>
+                        <div class="box-hover w-full h-full absolute box-hover-hover">
+                            <div style="background-image: url(assets/img/3-2.jpg); background-size: cover; " class="w-full h-full hover:scale-110 duration-500 box-hover" alt=""></div>
+                        </div>
+                    </div>
+                    <div id="box-parent" class=" h-[24rem] items-end flex relative overflow-hidden rounded-lg">
+                        <div class="text-white z-10 mx-5 mb-6 text-hover">
+                            <h1 class="text-3xl text-hover">Project Name 04</h1>
+                            <p class="text-lg font-thin text-hover">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolor beatae laborum perferendis saepe, non illo quia neque ex aut.</p>
+                        </div>
+                        <div class="box-hover w-full h-full absolute box-hover-hover">
+                            <div style="background-image: url(assets/img/3-2.jpg); background-size: cover; " class="w-full h-full hover:scale-110 duration-500 box-hover" alt=""></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
     
     <!-- ==================================================== -->
     <!-- ==================================================== -->
-    <!-- ====================== ACTIVITON END ====================== -->             <!-- by Yasir -->
+    <!-- ====================== ACTIVITON END ====================== -->             <!-- by Yusran -->
 
 
 
