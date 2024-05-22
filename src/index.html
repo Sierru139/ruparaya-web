@@ -13,37 +13,9 @@
     <title>Rupa Raya Indonesia</title>
 </head>
 <style>
-    .img {
-        background-image: url(assets/img/building.jpg);
-        background-size: cover;
+    html {
+        scroll-behavior: smooth;
     }
-
-    .gg-menu {
-    transform: scale(var(--ggs,1))
-    }
-
-    .gg-menu,
-    .gg-menu::after,
-    .gg-menu::before {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    width: 20px;
-    height: 2px;
-    border-radius: 3px;
-    background: currentColor
-    }
-
-    .gg-menu::after,
-    .gg-menu::before {
-    content: "";
-    position: absolute;
-    top: -6px
-    }
-
-    .gg-menu::after {
-    top: 6px
-    } 
 
     .text-hover {
         opacity: 0;
@@ -54,21 +26,12 @@
         opacity: 1;
     }
 
-    .box-hover {
-        transition-duration: 1s;
-    }
-
-    .box-hover:hover {
+    #box-parent:hover .box-hover {
         box-shadow: inset 900px 0px 0px rgba(60, 166, 253, 0.5);
+        transform: scale(1.1);
     }
 
-    .box-hover-hover {
-        transition-duration: 2s;
-    }
 
-    .box-hover-hover:hover {
-        box-shadow: inset 900px 0px 0px rgba(19, 37, 51, 0.9);
-    }
 </style>
 <body class="font-nunito">
 
@@ -76,25 +39,6 @@
     <!-- ==================================================== -->
     <!-- ==================================================== -->
     
-    <nav class="absolute top-0 left-0 right-0 m-10 md:px-20">
-        <div class="flex  items-center justify-between flex-wrap py-4 px-10 bg-[#F7F7F7] rounded-full">
-            <div class="">
-                <img src="assets/img/logo.jpg" class="cursor-pointer w-40" alt="">
-            </div>
-            <div class="md:flex hidden"></div>
-            <div class="lg:flex hidden gap-x-7 text-[18px] font-semibold">
-                <a>Home</a>
-                <a>About</a>
-                <a>Product</a>
-                <a>Achievement</a>
-                <a>Internship Program</a>
-                <a>Activition</a>
-            </div>
-            <div class="py-4 px-10 text-[#F7F7F7] bg-[#EDC806] rounded-full transition duration-300 hover:scale-90 cursor-pointer font-bold">
-                <p>Schedule Call Now</p>
-            </div>
-        </div>
-    </nav>         
     <!-- ==================================================== -->
     <!-- ==================================================== -->
     <!-- ====================== NAVBAR END ====================== -->              <!-- by Hafiz -->
@@ -103,15 +47,57 @@
     <!-- ==================================================== -->
     <!-- ====================== SLIDER START ====================== -->
     
-    <section class="h-screen md:p-20 p-10 flex items-center bg-[url(../assets/img/building.jpg)] bg-cover bg-no-repeat bg-center">    
-        <div class="max-w-[750px] m-10 text-left">
-            <h1 class="text-5xl font-bold text-white">RUPARAYA INDONESIA</h1>
-            <p class="text-[#F7F7F7] mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis tellus in metus vulputate eu scelerisque felis. Vitae congue mauris rhoncus aenean.</p>
-            <div class="flex sm:flex-row flex-col items-start md:items-center mt-10">
-                <a class="sm:mr-2 mt-3 bg-[#EDC806] py-3 px-6 rounded-full text-white">Explore More</a>
-                <div class="flex items-center">
-                    <i class="sm:mr-2 mt-3 fas fas fa-play bg-[#EDC806] py-3 px-4 rounded-full text-white text-2xl"></i>
-                    <p class="sm:mr-2 mt-3 text-[#F7F7F7]">SHOW MORE VIDEO</p>
+    <section id="slide" class="h-screen md:p-12 p-10 flex items-center bg-[url(../assets/img/slider-1.jpg)] bg-cover bg-no-repeat bg-center bg-fixed">    
+        <div class="container h-full mx-auto relative flex items-center">
+            <!-- NAVBAR -->
+            <nav class="absolute top-0 left-0 right-0">
+                <div class="flex items-center justify-between flex-wrap py-4 px-10 bg-[#FCFAF7] shadow-md rounded-full">
+                    <div class="mr-3">
+                        <img src="assets/img/logo.jpg" class="cursor-pointer w-40" alt="">
+                    </div>
+                    <div class="xl:hidden flex">
+                        <div class="bg-[#003F5C] hover:bg-[#EDC806] cursor-pointer transition-all shadow-md rounded-xl px-4 py-2 text-white"><i class="fas fa-bars"></i></div>
+                    </div>
+                    <div class="xl:flex flex-grow hidden font-semibold justify-center">
+                        <ul class="flex">
+                            <li class="ml-4">
+                                <a href="#slide">Home</a>
+                            </li>
+                            <li class="ml-4">
+                                <a href="#about">About</a>
+                            </li>
+                            <li class="ml-4">
+                                <a href="#product">Product</a>
+                            </li>
+                            <li class="ml-4">
+                                <a href="#achievement">Achievement</a>
+                            </li>
+                            <li class="ml-4">
+                                <a href="#intern">Internship</a>
+                            </li>
+                            <li class="ml-4">
+                                <a href="#activition">Activition</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-grow md:flex hidden justify-end">
+                        <div class="py-4 px-8 text-[#F7F7F7] shadow-xl bg-[#EDC806] w-52 text-center rounded-full transition duration-300 hover:scale-90 cursor-pointer font-bold ">
+                            <p>Schedule Call Now</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>         
+            <!-- NAVBAR -->
+            
+            <div class="2xl:mr-[60%] xl:mr-[50%] lg:mr-[30%]">
+                <h1 class="text-5xl font-bold text-white">RUPARAYA INDONESIA</h1>
+                <p class="text-[#F7F7F7] mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis tellus in metus vulputate eu scelerisque felis. Vitae congue mauris rhoncus aenean.</p>
+                <div class="flex sm:flex-row flex-col items-start md:items-center mt-10">
+                    <a class="sm:mr-2 mt-3 bg-[#EDC806] py-3 px-6 rounded-full text-white">Explore More</a>
+                    <div class="flex items-center">
+                        <i class="mr-2 mt-3 fas fas fa-play bg-[#EDC806] py-3 px-4 rounded-full text-white text-2xl"></i>
+                        <p class="mr-2 mt-3 text-[#F7F7F7]">SHOW MORE VIDEO</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -126,16 +112,16 @@
 
 
 
-    <!-- ====================== TENTANG START====================== -->              <!-- by Yasir -->
+    <!-- ====================== TENTANG START ====================== -->              <!-- by Yasir -->
     <!-- ==================================================== -->
     <!-- ==================================================== -->
 
-    <section id="tentang" class="w-full px-5 py-16 flex md:flex-row flex-col-reverse justify-center items-center">
+    <section id="about" class="container mx-auto px-5 py-16 flex lg:flex-row flex-col-reverse justify-center items-center">
         <div class="flex-1">
-            <div class="flex p-4 justify-center items-center">
-                <div class="h-72 w-56 rounded-full mr-4 bg-blue-300 bg-[url('../assets/img/3-1.jpg')] bg-no-repeat bg-center bg-cover"></div>
-                <div class="h-96 w-56 rounded-full mr-4 relative bg-[url('../assets/img/3-2.jpg')] bg-no-repeat bg-center bg-cover">
-                    <img src="assets/img/graphic-1-1.png" class="absolute bottom-0 w-full rounded-full ">
+            <div class="flex md:p-4 justify-center items-center lg:mt-0 mt-10">
+                <div class="sm:h-72 h-56 sm:w-56 w-40  rounded-full mr-4 bg-blue-300 bg-[url('../assets/img/3-1.jpg')] bg-no-repeat bg-center bg-cover"></div>
+                <div class="sm:h-96 h-72 sm:w-56 w-40  rounded-full mr-4 relative bg-[url('../assets/img/3-2.jpg')] bg-no-repeat bg-center bg-cover">
+                    <img src="assets/img/graphic-3-1.png" class="absolute bottom-0 w-full rounded-full ">
                 </div>
             </div>
         </div>
@@ -160,11 +146,11 @@
 
             <div>
                 <div class="flex items-center mb-4">
-                    <img class="w-10 mr-4" src="assets/img/icon-2-1.jpg" alt="">
+                    <img class="w-10 mr-4" src="assets/img/icon-3-1.jpg" alt="">
                     <h5 class="text-xl">Lorem adipisicing elit. Earum, ipsam?</h5>
                 </div>
                 <div class="flex items-center">
-                    <img class="w-10 mr-4" src="assets/img/icon-2-2.jpg" alt="">
+                    <img class="w-10 mr-4" src="assets/img/icon-3-2.jpg" alt="">
                     <h5 class="text-xl">vero sapiente id impedit.</h5>
                 </div>
             </div>
@@ -185,12 +171,12 @@
     <!-- ==================================================== -->
     <!-- ==================================================== -->
 
-    <section class="w-full bg-[#EDF9FF]">
+    <section id="produk" class="bg-[#EDF9FF]">
 
-        <div class="max-w-[1280px] mx-auto">
+        <div class="container mx-auto">
             <div class=" pt-20 pb-5 px-10">
                 <div class= "mx-auto flex flex-col md:flex-row justify-around">
-                    <div class="flex justify-center flex-col flex-1 m-5 p-2">
+                    <div class="flex justify-center flex-col flex-1 md:m-5 p-2">
                         <p class="">PROJECT LIST</p>
                         <h2 class="text-5xl mb-3 font-bold">Solution for <span class="text-blue-400">Business</span></h2>
                     </div>
@@ -247,8 +233,82 @@
     <!-- ==================================================== -->
     <!-- ==================================================== -->
 
-    <section>
+    <section id="achievement" class="bg-[#F0F9FF]">
+        <div class="container mx-auto">
+            <div class="p-5">
 
+                <div class="">
+                    <div class="flex items-center">
+                        <div class="w-6 h-[2px] bg-[#003F5C]"></div>
+                        <p class="tracking-widest pl-2">PENCAPAIAN</p>
+                    </div>
+                    <h1 class="mt-2 text-3xl">Benefit of Working Cooperation</h1>
+                    <div class="xl:m-[1rem_50%_0%_0%]">
+                        <p>Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus. Pharetra massa massa ultricies mi quis hendrerit. Et sollicitudin ac orci phasellus. Iaculis urna id volutpat lacus laoreet non curabitur gravida.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-6 flex flex-wrap border-b pb-10">
+                    <div class="mt-8 flex items-end xl:flex-1 md:flex-[0_0_50%]">
+                        <div class="xl:h-52 h-52 w-1 bg-gradient-to-t from-[#46AFDD] to-[#9EECB0] mr-3"></div>
+                        <div>
+                            <div class="w-7 h-7 bg-black rounded-full"></div>
+                            <h1 class="mt-2 text-xl">Project Name 01</h4>
+                            <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <p class="mt-10">2022</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex items-end xl:flex-1 md:flex-[0_0_50%]">
+                        <div class="xl:h-64 h-52 w-1 bg-gradient-to-t from-[#46AFDD] to-[#9EECB0] mr-3"></div>
+                        <div>
+                            <div class="w-7 h-7 bg-black rounded-full"></div>
+                            <h1 class="mt-2 text-xl">Project Name 02</h4>
+                            <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <p class="mt-10">2023</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex items-end xl:flex-1 md:flex-[0_0_50%]">
+                        <div class="xl:h-52 h-52 w-1 bg-gradient-to-t from-[#46AFDD] to-[#9EECB0] mr-3"></div>
+                        <div>
+                            <div class="w-7 h-7 bg-black rounded-full"></div>
+                            <h1 class="mt-2 text-xl">Project Name 03</h4>
+                            <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <p class="mt-10">2024</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex items-end xl:flex-1 md:flex-[0_0_50%]">
+                        <div class="xl:h-64 h-52 w-1 bg-gradient-to-t from-[#46AFDD] to-[#9EECB0] mr-3"></div>
+                        <div>
+                            <div class="w-7 h-7 bg-black rounded-full"></div>
+                            <h1 class="mt-2 text-xl">Project Name 01</h4>
+                            <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <p class="mt-10">2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-14 flex flex-wrap items-center">
+                    <div class="sm:flex-1 flex-[0_0_50%] sm:mb-0 mb-8 flex flex-col items-center">
+                        <h3 class="text-2xl font-bold">32<span class="text-blue-400 text-lg">k</span></h3>
+                        <p>Project Done</p>
+                    </div>
+                    <div class="sm:flex-1 flex-[0_0_50%] sm:mb-0 mb-8 flex flex-col items-center">
+                        <h3 class="text-2xl font-bold"><span class="text-lg text-blue-400">$</span>12<span class="text-lg text-blue-400">M</span></h3>
+                        <p>Project Done</p>
+                    </div>
+                    <div class="sm:flex-1 flex-[0_0_50%] sm:mb-0 mb-8 flex flex-col items-center">
+                        <h3 class="text-2xl font-bold">1000<span class="text-lg text-blue-400">+</span></h3>
+                        <p>Feedback</p>
+                    </div>
+                    <div class="sm:flex-1 flex-[0_0_50%] sm:mb-0 mb-8 flex flex-col items-center">
+                        <h3 class="text-2xl font-bold">3.200<span class="text-lg text-blue-400">+</span></h3>
+                        <div></div>
+                        <p class="rounded-full py-1 px-3 bg-blue-600">Contributors</p>
+                    </div>
+                        
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- ==================================================== -->
@@ -263,14 +323,14 @@
     <!-- ==================================================== -->
     <!-- ==================================================== -->
 
-    <section class="h-screen pt-20 px-20">
-        <div class="flex justify-between">
-            <div class="max-w-[700px]  flex-1 ">
+    <section id="intern" class="py-20 overflow-hidden">
+        <div class="xl:flex items-center container m-auto px-10">
+            <div class="flex-1 md:mr-10">
                 <div class="flex items-center">
                     <div class="w-6 h-[2px] bg-[#EDC806]"></div>
                     <p class="tracking-widest pl-2">INTERSHIP</p>
                 </div>
-                <h1 class="font-bold text-2xl md:text-5xl w-[470px] py-5">Program Intership Rupa Raya Indonesia</h1>
+                <h1 class="font-bold text-2xl md:text-3xl my-5">Program Intership Rupa Raya Indonesia</h1>
                 <p class="text-[#646464] text-[17px]">Amet mauris commodo quis imperdiet. Vulputate mi sit amet mauris commodo quis. Nulla at volutpat diam ut. Eu facilisis sed odio morbi quis. Elementum tempus egestas sed sed risus pretium quam.</p>
                 <div class=" flex items-start py-5">
                     <i class="fas fas fa-braille bg-[#0056C1] p-3 text-white rounded-[50%] text-1xl"></i>
@@ -294,10 +354,10 @@
                     </div>
                 </div>
             </div>
-            <div class="relative w-1/3 mt-10 z-10 ">
-                <div class="absolute w-1/3 mt-10 z-10 rounded-t-full bg-[url(../assets/img/training.jpg)]"></div>
-                <img class="absolute w-1/2 top-1 -z-10 -right-20" src="assets/img/element.jpg" alt="">
-                <img class="absolute w-72" src="assets/img/graphic-1-1.jpg" alt="">
+            <div class="relative flex-1 xl:mt-0 mt-10">
+                <img class="absolute w-2/5 z-20 bottom-10 -right-10" src="assets/img/graphic-3-1.png" alt="">
+                <img class="rounded-t-full " src="assets/img/training.jpg" alt="">
+                <img class="absolute w-3/5 -bottom-10 -right-20 -z-10" src="assets/img/element.jpg" alt="">
             </div>
         </div>
     </section>
@@ -314,49 +374,50 @@
     <!-- ==================================================== -->
     <!-- ==================================================== -->
 
-        <section class=" bg-white pt-20 px-56 mb-12">
-            <div>
+        <section id="activition" class="bg-white mt-20 mb-12">
+            <div class="container mx-auto px-10">
                 <div class="flex flex-col items-center">
                     <h1 class="font-thin text-xl tracking-[0.3em]">Latest Project</h1>
                     <h1 class="text-5xl font-bold py-6">Make Work More <span class="text-[#002E6B]">Efficient</span></h1>
                     <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi itaque architecto totam numquam fugiat. Eligendi, libero iure magni enim laborum quo dolores ea! Recusandae illum repellat facilis necessitatibus explicabo assumenda quisquam animi.</p>
                 </div>
 
-                <div class="grid grid-cols-2 grid-rows-2 gap-4 mt-4">
-                    <div id="box-parent" class=" h-[24rem] items-end flex relative overflow-hidden rounded-lg">
-                        <div class="text-white z-10 mx-5 mb-6 text-hover">
-                            <h1 class="text-3xl text-hover">Project Name 01</h1>
-                            <p class="text-lg font-thin text-hover">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolor beatae laborum perferendis saepe, non illo quia neque ex aut.</p>
+                <div class="grid lg:grid-cols-2 gap-5 h-screen mt-4">
+
+                    <div id="box-parent" class="flex relative items-end overflow-hidden rounded-lg">
+                        <div class="text-white z-10 m-10 text-hover">
+                            <h1 class="md:text-3xl text-xl ">Project Name 01</h1>
+                            <p class="md:text-lg font-thin ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolor beatae laborum perferendis saepe, non illo quia neque ex aut.</p>
                         </div>
-                        <div class="box-hover w-full h-full absolute box-hover-hover">
-                            <div style="background-image: url(assets/img/3-2.jpg); background-size: cover; " class="w-full h-full hover:scale-110 duration-500 box-hover" alt=""></div>
-                        </div>
-                    </div>
-                    <div id="box-parent" class=" h-[24rem] items-end flex relative overflow-hidden rounded-lg">
-                        <div class="text-white z-10 mx-5 mb-6 text-hover">
-                            <h1 class="text-3xl text-hover">Project Name 02</h1>
-                            <p class="text-lg font-thin text-hover">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolor beatae laborum perferendis saepe, non illo quia neque ex aut.</p>
-                        </div>
-                        <div class="box-hover w-full h-full absolute box-hover-hover">
-                            <div style="background-image: url(assets/img/3-2.jpg); background-size: cover; " class="w-full h-full hover:scale-110 duration-500 box-hover" alt=""></div>
+                        <div class="w-full h-full absolute overflow-hidden rounded-lg">
+                            <div class="w-full h-full duration-700 box-hover rounded-lg" style="background-image: url(assets/img/3-2.jpg); background-size: cover;"  alt=""></div>
                         </div>
                     </div>
-                    <div id="box-parent" class=" h-[24rem] items-end flex relative overflow-hidden rounded-lg">
-                        <div class="text-white z-10 mx-5 mb-6 text-hover">
-                            <h1 class="text-3xl text-hover">Project Name 03</h1>
-                            <p class="text-lg font-thin text-hover">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolor beatae laborum perferendis saepe, non illo quia neque ex aut.</p>
+                    <div id="box-parent" class="flex relative items-end overflow-hidden rounded-lg">
+                        <div class="text-white z-10 m-10 text-hover">
+                            <h1 class="md:text-3xl text-xl ">Project Name 01</h1>
+                            <p class="md:text-lg font-thin ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolor beatae laborum perferendis saepe, non illo quia neque ex aut.</p>
                         </div>
-                        <div class="box-hover w-full h-full absolute box-hover-hover">
-                            <div style="background-image: url(assets/img/3-2.jpg); background-size: cover; " class="w-full h-full hover:scale-110 duration-500 box-hover" alt=""></div>
+                        <div class="w-full h-full absolute overflow-hidden rounded-lg">
+                            <div class="w-full h-full duration-700 box-hover rounded-lg" style="background-image: url(assets/img/3-2.jpg); background-size: cover;"  alt=""></div>
                         </div>
                     </div>
-                    <div id="box-parent" class=" h-[24rem] items-end flex relative overflow-hidden rounded-lg">
-                        <div class="text-white z-10 mx-5 mb-6 text-hover">
-                            <h1 class="text-3xl text-hover">Project Name 04</h1>
-                            <p class="text-lg font-thin text-hover">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolor beatae laborum perferendis saepe, non illo quia neque ex aut.</p>
+                    <div id="box-parent" class="flex relative items-end overflow-hidden rounded-lg">
+                        <div class="text-white z-10 m-10 text-hover">
+                            <h1 class="md:text-3xl text-xl ">Project Name 01</h1>
+                            <p class="md:text-lg font-thin ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolor beatae laborum perferendis saepe, non illo quia neque ex aut.</p>
                         </div>
-                        <div class="box-hover w-full h-full absolute box-hover-hover">
-                            <div style="background-image: url(assets/img/3-2.jpg); background-size: cover; " class="w-full h-full hover:scale-110 duration-500 box-hover" alt=""></div>
+                        <div class="w-full h-full absolute overflow-hidden rounded-lg">
+                            <div class="w-full h-full duration-700 box-hover rounded-lg" style="background-image: url(assets/img/3-2.jpg); background-size: cover;"  alt=""></div>
+                        </div>
+                    </div>
+                    <div id="box-parent" class="flex relative items-end overflow-hidden rounded-lg">
+                        <div class="text-white z-10 m-10 text-hover">
+                            <h1 class="md:text-3xl text-xl ">Project Name 01</h1>
+                            <p class="md:text-lg font-thin ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis dolor beatae laborum perferendis saepe, non illo quia neque ex aut.</p>
+                        </div>
+                        <div class="w-full h-full absolute overflow-hidden rounded-lg">
+                            <div class="w-full h-full duration-700 box-hover rounded-lg" style="background-image: url(assets/img/3-2.jpg); background-size: cover;"  alt=""></div>
                         </div>
                     </div>
                     
@@ -376,8 +437,9 @@
     <!-- ==================================================== -->
     <!-- ==================================================== -->
 
-    <section class=" py-12 bg-[#EDF9FF]">
-        <div class="flex mx-12 flex-col md:flex-row md:flex gap-6 ">
+    <section class="py-12 bg-[#EDF9FF]">
+
+        <div class="container mx-auto px-10 flex flex-col md:flex-row md:flex gap-6 ">
             <div class="flex-1 mb-10">
                 <div>
                     <h1 class="font-thin text-xl">CONTACT US</h1>
@@ -441,10 +503,10 @@
     <!-- ==================================================== -->
     <!-- ==================================================== -->
 
-    <section class="bg-[#002E6B] flex">
-        <div class="flex flex-col">
-            <div class="px-16 md:px-20 py-20 md:py-24 pb-4 md:pb-6 box-border flex flex-col items-center lg:flex-row justify-between text-center lg:text-left">
-                <div class="flex gap-6 flex-col">
+    <section class="bg-[#002E6B] pt-10">
+        <div class="container mx-auto">
+            <div class="px-16 flex justify-center md:flex-row flex-col">
+                <div class="flex-1 mr-3 md:text-left text-center">
                     <div class="text-white">
                         <h1 class="text-xl [&>p]:text-lg">LOCATION</h1>
                         <div class="py-4 flex flex-col gap-3">
@@ -463,7 +525,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col">
+                <div class="flex-1 mr-3 md:text-left text-center">
                     <h1 class="text-xl mt-4 text-white">OUR COMPANY</h1>
                     <div class="py-4 flex flex-col [&>a]:text-md [&>a]:text-[#426491] gap-3">
                         <a class="hover:underline" href="">Introduce Company</a>
@@ -474,7 +536,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col">
+                <div class="flex-1 mr-3 md:text-left text-center">
                     <h1 class="text-xl mt-4 text-white">OUR SERVICE</h1>
                     <div class="py-4 flex flex-col [&>a]:text-md [&>a]:text-[#426491] gap-3">
                         <a class="hover:underline" href="">Digital Marketing</a>
@@ -485,7 +547,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col">
+                <div class="flex-1 mr-3 md:text-left text-center">
                     <h1 class="text-xl mt-4 text-white">USEFUL LINKS</h1>
                     <div class="py-4 flex flex-col [&>a]:text-md [&>a]:text-[#426491] gap-3">
                         <a class="hover:underline" href="">Latest Project</a>
@@ -496,7 +558,7 @@
                     </div>
                 </div>
             </div>
-            <div class="px-20 py-4 border-t-2 border-[#426491] h-36 md:h-full flex w-screen justify-between items-center md:flex-row flex-col">
+            <div class="px-20 py-4 border-t-2 border-[#426491] h-36 md:h-full flex w-full justify-between items-center md:flex-row flex-col">
                 <div class="flex w-fit">
                     <img src="assets/img/logo-white.png" alt="" class="w-44">
                 </div>
@@ -508,8 +570,6 @@
     <!-- ==================================================== -->
     <!-- ==================================================== -->
     <!-- ====================== FOOTER END ====================== -->  <!-- by Yusran -->
-
-
-    
+ 
 </body>
 </html>
