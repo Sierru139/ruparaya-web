@@ -47,8 +47,20 @@
     <!-- ==================================================== -->
     <!-- ====================== SLIDER START ====================== -->
     
-    <section id="slide" class="h-screen md:p-12 p-10 flex items-center bg-[url(../assets/img/slider-1.jpg)] bg-cover bg-no-repeat bg-center bg-fixed">    
-        <div class="container h-full mx-auto relative flex items-center">
+    <section id="slide" class="h-screen md:p-12 p-10 relative flex items-center">    
+        <div id="bgSlider" class="top-0 left-0 right-0 bottom-0 absolute brightness-75 bg-cover bg-no-repeat bg-center bg-fixed "></div>
+        <script>
+            window.onload = function () {
+                const bgSlider = document.getElementById('bgSlider');
+                var bgImage = ['./assets/img/slider-1.jpg',
+                './assets/img/slider-2.jpg',
+                './assets/img/slider-3.jpg',
+                './assets/img/slider-4.jpg']
+            }
+
+        </script>
+        <!-- <div class="top-0 left-0 right-0 bottom-0 z-10 brightness-50 absolute"></div> -->
+        <div class="container h-full mx-auto relative flex items-center z-20">
             <!-- NAVBAR -->
             <nav class="absolute top-0 left-0 right-0">
                 <div class="flex items-center justify-between flex-wrap py-4 px-10 bg-[#FCFAF7] shadow-md rounded-full">
@@ -182,7 +194,7 @@
                     </div>
                     <div class="flex-1 p-2">
                         <p class="mb-7">Voluptatum, eum. Quidem eum animi iste exercitationem, ea inventore magnam maxime perferendis ut sint magni quam iusto corrupti odio. Veritatis et tenetur unde officia!</p>
-                        <a href="" class="py-3 px-7 rounded-full bg-gradient-to-tl from-yellow-500 to-blue-500 text-white font-semibold">Contact Now</a>
+                        <a href="" class="py-3 px-7 rounded-full bg-blue-500 text-white font-semibold">Contact Now</a>
                     </div>
                 </div>
             </div>
@@ -287,7 +299,7 @@
                     </div>
                 </div>
 
-                <div class="mt-14 flex flex-wrap items-center">
+                <div class="my-10 flex flex-wrap items-center">
                     <div class="sm:flex-1 flex-[0_0_50%] sm:mb-0 mb-8 flex flex-col items-center">
                         <h3 class="text-2xl font-bold">32<span class="text-blue-400 text-lg">k</span></h3>
                         <p>Project Done</p>
@@ -303,7 +315,7 @@
                     <div class="sm:flex-1 flex-[0_0_50%] sm:mb-0 mb-8 flex flex-col items-center">
                         <h3 class="text-2xl font-bold">3.200<span class="text-lg text-blue-400">+</span></h3>
                         <div></div>
-                        <p class="rounded-full py-1 px-3 bg-blue-600">Contributors</p>
+                        <p class="rounded-full py-1 px-3 bg-blue-600 text-white">Contributors</p>
                     </div>
                         
                 </div>
@@ -505,7 +517,7 @@
 
     <section class="bg-[#002E6B] pt-10">
         <div class="container mx-auto">
-            <div class="flex justify-center md:flex-row flex-wrap flex-col">
+            <div class="flex justify-center md:flex-row flex-wrap flex-col px-10">
                 <div class="lg:flex-1 flex-[0_0_50%] pr-3 md:text-left text-center">
                     <div class="text-white">
                         <h1 class="text-xl [&>p]:text-lg">LOCATION</h1>
