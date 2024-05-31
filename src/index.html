@@ -31,7 +31,19 @@
         transform: scale(1.1);
     }
 
+    #bgSlider {
+        animation: fadeOut 7s infinite;
+        background-image: url('./assets/img/slider-1.jpg');
+    }
 
+    @keyframes fadeOut{
+        from {
+            scale: 1;
+        }
+        to {
+            scale: 1.1;
+        }
+    }
 </style>
 <body class="font-nunito">
 
@@ -47,18 +59,8 @@
     <!-- ==================================================== -->
     <!-- ====================== SLIDER START ====================== -->
     
-    <section id="slide" class="h-screen md:p-12 p-10 relative flex items-center">    
+    <section id="slide" class="h-screen md:p-12 p-10 relative flex items-center overflow-hidden">    
         <div id="bgSlider" class="top-0 left-0 right-0 bottom-0 absolute brightness-75 bg-cover bg-no-repeat bg-center bg-fixed "></div>
-        <script>
-            window.onload = function () {
-                const bgSlider = document.getElementById('bgSlider');
-                var bgImage = ['./assets/img/slider-1.jpg',
-                './assets/img/slider-2.jpg',
-                './assets/img/slider-3.jpg',
-                './assets/img/slider-4.jpg']
-            }
-
-        </script>
         <!-- <div class="top-0 left-0 right-0 bottom-0 z-10 brightness-50 absolute"></div> -->
         <div class="container h-full mx-auto relative flex items-center z-20">
             <!-- NAVBAR -->
@@ -582,6 +584,21 @@
     <!-- ==================================================== -->
     <!-- ==================================================== -->
     <!-- ====================== FOOTER END ====================== -->  <!-- by Yusran -->
- 
+
+    <script>
+        window.onload = function () {
+            var bgSlider = document.getElementById('bgSlider');
+            var bgImage = ['./assets/img/slider-1.jpg',
+            './assets/img/slider-2.jpg',
+            './assets/img/slider-3.jpg',
+            './assets/img/slider-4.jpg']
+                setInterval(changeImage, 7000);
+                function changeImage() {   
+                var i = Math.floor((Math.random() * 4));
+
+                bgSlider.style.backgroundImage = "url('"+bgImage[i]+"')";
+            }
+        }
+    </script>
 </body>
 </html>
