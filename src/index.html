@@ -31,16 +31,16 @@
         transform: scale(1.1);
     }
 
-    #bgSlider {
-        animation: fadeOut 7s infinite;
-        background-image: url('./assets/img/slider-1.jpg');
+    .bgSlider {
+        transition: 3s ease-in-out;
+        animation: scaleup 20s infinite ease-in-out;
     }
 
-    @keyframes fadeOut{
-        from {
+    @keyframes scaleup {
+        0% {
             scale: 1;
         }
-        to {
+        50% {
             scale: 1.1;
         }
     }
@@ -58,19 +58,23 @@
     <!-- ==================================================== -->
     <!-- ==================================================== -->
     <!-- ====================== SLIDER START ====================== -->
-    
-    <section id="slide" class="h-screen md:p-12 p-10 relative flex items-center overflow-hidden">    
-        <div id="bgSlider" class="top-0 left-0 right-0 bottom-0 absolute brightness-75 bg-cover bg-no-repeat bg-center bg-fixed "></div>
+
+    <section id="slide" class="h-screen md:px-28 md:py-16 py-6 px-6 relative flex items-center overflow-hidden">    
+        <div class="bgSlider bg-[url('../assets/img/slider-1.jpg')] top-0 left-0 right-0 bottom-0 absolute brightness-75 bg-cover bg-no-repeat bg-center bg-fixed "></div>
+        <div class="bgSlider bg-[url('../assets/img/slider-2.jpg')] top-0 left-0 right-0 bottom-0 absolute brightness-75 bg-cover bg-no-repeat bg-center bg-fixed "></div>
+        <div class="bgSlider bg-[url('../assets/img/slider-3.jpg')] top-0 left-0 right-0 bottom-0 absolute brightness-75 bg-cover bg-no-repeat bg-center bg-fixed "></div>
         <!-- <div class="top-0 left-0 right-0 bottom-0 z-10 brightness-50 absolute"></div> -->
+        
+        
         <div class="container h-full mx-auto relative flex items-center z-20">
             <!-- NAVBAR -->
             <nav class="absolute top-0 left-0 right-0">
-                <div class="flex items-center justify-between flex-wrap py-4 px-10 bg-[#FCFAF7] shadow-md rounded-full">
+                <div class="flex relative items-center justify-between flex-wrap py-4 lg:px-16 px-8 bg-[#FCFAF7] shadow-md rounded-full">
                     <div class="mr-3">
-                        <img src="assets/img/logo.jpg" class="cursor-pointer w-40" alt="">
+                        <img src="assets/img/logo.jpg" class="cursor-pointer lg:w-40 w-32" alt="">
                     </div>
                     <div class="xl:hidden flex">
-                        <div class="bg-[#003F5C] hover:bg-[#EDC806] cursor-pointer transition-all shadow-md rounded-xl px-4 py-2 text-white"><i class="fas fa-bars"></i></div>
+                        <div id="navBtn" class="bg-[#003F5C] hover:bg-[#EDC806] cursor-pointer transition-all shadow-md rounded-xl px-4 py-2 text-white"><i class="fas fa-bars"></i></div>
                     </div>
                     <div class="xl:flex flex-grow hidden font-semibold justify-center">
                         <ul class="flex">
@@ -99,8 +103,54 @@
                             <p>Schedule Call Now</p>
                         </div>
                     </div>
-                </div>
-            </nav>         
+                        <div id="navMenu" class="hidden absolute z-50 left-0 right-0 top-24 bg-[#FCFAF7]">
+                            <ul class="p-5 text-xl">
+                                <li class=" mb-6">
+                                    <a href="#slide">Home</a>
+                                </li>
+                                <li class=" mb-6">
+                                    <a href="#about">About</a>
+                                </li>
+                                <li class=" mb-6">
+                                    <a href="#product">Product</a>
+                                </li>
+                                <li class=" mb-6">
+                                    <a href="#achievement">Achievement</a>
+                                </li>
+                                <li class=" mb-6">
+                                    <a href="#intern">Internship</a>
+                                </li>
+                                <li class=" mb-6">
+                                    <a href="#activition">Activition</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <script>
+                            const navBtn = document.getElementById("navBtn");
+                            const navMenu = document.getElementById("navMenu");
+                            navBtn.addEventListener("click", function(){
+                                navMenu.classList.toggle("hidden");
+                            })
+
+                            var myIndex = 0;
+                            carousel()
+                
+                            function carousel() {
+                                var imgs = document.getElementsByClassName('bgSlider')
+                                for (let i = 0; i < imgs.length; i++){
+                                    imgs[i].style.opacity = 0;
+                                }
+                                myIndex++;
+                                if (myIndex > imgs.length) {
+                                    myIndex = 1
+                                }
+                                imgs[myIndex - 1].style.opacity = 1;
+                                setTimeout(carousel, 6000);
+                            }    
+                    
+                        </script>
+                    </div>
+                    </nav>         
             <!-- NAVBAR -->
             
             <div class="2xl:mr-[60%] xl:mr-[50%] lg:mr-[30%]">
@@ -133,8 +183,8 @@
     <section id="about" class="container mx-auto px-5 py-16 flex lg:flex-row flex-col-reverse justify-center items-center">
         <div class="flex-1">
             <div class="flex md:p-4 justify-center items-center lg:mt-0 mt-10">
-                <div class="sm:h-72 h-56 sm:w-56 w-40  rounded-full mr-4 bg-blue-300 bg-[url('../assets/img/3-1.jpg')] bg-no-repeat bg-center bg-cover"></div>
-                <div class="sm:h-96 h-72 sm:w-56 w-40  rounded-full mr-4 relative bg-[url('../assets/img/3-2.jpg')] bg-no-repeat bg-center bg-cover">
+                <div class="sm:h-72 h-56 sm:w-56 w-40  rounded-full md:mr-4 mr-2 bg-blue-300 bg-[url('../assets/img/3-1.jpg')] bg-no-repeat bg-center bg-cover"></div>
+                <div class="sm:h-96 h-72 sm:w-56 w-40  rounded-full md:mr-4 relative bg-[url('../assets/img/3-2.jpg')] bg-no-repeat bg-center bg-cover">
                     <img src="assets/img/graphic-3-1.png" class="absolute bottom-0 w-full rounded-full ">
                 </div>
             </div>
@@ -585,20 +635,6 @@
     <!-- ==================================================== -->
     <!-- ====================== FOOTER END ====================== -->  <!-- by Yusran -->
 
-    <script>
-        window.onload = function () {
-            var bgSlider = document.getElementById('bgSlider');
-            var bgImage = ['./assets/img/slider-1.jpg',
-            './assets/img/slider-2.jpg',
-            './assets/img/slider-3.jpg',
-            './assets/img/slider-4.jpg']
-                setInterval(changeImage, 7000);
-                function changeImage() {   
-                var i = Math.floor((Math.random() * 4));
 
-                bgSlider.style.backgroundImage = "url('"+bgImage[i]+"')";
-            }
-        }
-    </script>
 </body>
 </html>
